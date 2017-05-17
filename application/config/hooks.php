@@ -11,3 +11,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	https://codeigniter.com/user_guide/general/hooks.html
 |
 */
+$hook['post_controller_constructor'][] = array(
+    'class'     => 'Login_check',
+    'function'  => 'checkPermission',
+    'filename'  => 'login_check.php',
+    'filepath'  => 'hooks'
+);
+
+$hook['post_controller'][] = array(
+   'class' => 'Maintenance',
+   'function' => 'maintenance',
+   'filename' => 'maintenance.php',
+   'filepath' => 'hooks',
+   'params' => array()
+);
