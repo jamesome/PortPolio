@@ -1,0 +1,20 @@
+CREATE TABLE `members` (
+           `idx` int(11) NOT NULL AUTO_INCREMENT COMMENT '고유 인덱스',
+           `memid` varchar(30) COLLATE utf8_unicode_ci NOT NULL COMMENT '유저 ID',
+           `nickname` varchar(50) COLLATE utf8_unicode_ci NOT NULL COMMENT '닉네임',
+           `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL COMMENT '이메일',
+           `passwd` varchar(100) COLLATE utf8_unicode_ci NOT NULL COMMENT '패스워드',
+           `point` int(11) NOT NULL DEFAULT '0' COMMENT '활동 포인트',
+           `level` tinyint(4) NOT NULL DEFAULT '1' COMMENT '레벨',
+           `level_exp` int(11) NOT NULL DEFAULT '0' COMMENT '레벨업 경험치',
+           `last_login_date` datetime DEFAULT NULL COMMENT '최근 로그인 날짜',
+           `last_login_ip` varchar(39) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '최근 로그인 IP',
+           `is_auth` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N' COMMENT '인증 여부',
+           `is_leave` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N' COMMENT '탈퇴 여부',
+           `reg_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '등록일시',
+           PRIMARY KEY (`idx`),
+           UNIQUE KEY `memid` (`memid`),
+           UNIQUE KEY `nickname` (`nickname`),
+           KEY `email` (`email`),
+           KEY `member_search` (`level`,`is_leave`)
+         ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='회원정보'
