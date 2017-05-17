@@ -1,10 +1,14 @@
 <?php
 
-class MY_Controller extends CI_Controller {
-
+class MY_Controller extends CI_Controller
+{
     function __construct()
     {
         parent::__construct();
+
+        $this->segment1 = $this->uri->segment(1);
+        $this->segment2 = $this->uri->segment(2);
+        $this->segment3 = $this->uri->segment(3);
     }
 
     public function _remap($method)

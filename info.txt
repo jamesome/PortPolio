@@ -31,3 +31,7 @@
 
     4. Core
         - MY_Controller :: 기존 컨트롤러 확장
+
+    5. Controller
+        - ajax :: ajax만 따로 모아놓음.
+            - 형태 :: function ajax_get_user().
