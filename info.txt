@@ -1,0 +1,33 @@
+#### 사용명세
+
+    1. PHP
+        1) 7.0.13
+        2) CodeIgniter(3.1.4) - Framework
+
+    2. JavaScript
+        1) Jquery(3.2.1) - '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'
+        2)
+
+    3. DB
+        Mysql()
+
+    4. Server
+        Apache()
+
+
+#### CodeIgniter
+
+    1. library
+        1) Header.php :: Page 공통 헤더
+        2) Snoopy.php :: 파싱 클래스 라이브러리
+
+    2. Hooks
+        1) login_check :: 로그인 한 유저만 접근 가능 체크
+        2) Maintenence :: 정기점검
+
+    3. Helpers
+        1)
+        2)
+
+    4. Core
+        - MY_Controller :: 기존 컨트롤러 확장
