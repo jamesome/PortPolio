@@ -1,7 +1,7 @@
 #### 사용명세
 
     1. PHP
-        1) 7.0.13
+        1) 7.0.13 -> 7.1.4로 Update
         2) CodeIgniter(3.1.4) - Framework
 
     2. JavaScript
