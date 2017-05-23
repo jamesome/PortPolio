@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Board_m extends CI_Model
+class Board_m extends MY_Model
 {
     function __construct()
     {

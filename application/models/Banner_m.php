@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Banner_m extends CI_Model
+class Banner_m extends MY_Model
 {
     function __construct()
     {
