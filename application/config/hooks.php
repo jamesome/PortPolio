@@ -20,7 +20,7 @@ $hook['post_controller_constructor'][] = array(
 
 $hook['post_controller'][] = array(
    'class' => 'Maintenance',
-   'function' => 'maintenance',
+   'function' => 'check',
    'filename' => 'maintenance.php',
    'filepath' => 'hooks',
    'params' => array()

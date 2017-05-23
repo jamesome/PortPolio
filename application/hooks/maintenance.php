@@ -1,11 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 /**
-* 정기점검시간설정
-*/
+ * 정기점검시간설정
+ *
+ * 관리자 페이지에서 Redis에 변수를 넣고 그 변수로 판단.
+ */
 class Maintenance {
 
-    public function maintenance()
+    public function check()
     {
         $CI =& get_instance();
 
