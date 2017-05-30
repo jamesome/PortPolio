@@ -1,0 +1,4 @@
+<FilesMatch "\.(css)">
+    ForceType application/x-httpd-php
+    php_value auto_prepend_file ../../gzip-css.php
+</FilesMatch>
