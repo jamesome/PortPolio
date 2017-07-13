@@ -83,41 +83,40 @@ class Test extends CI_Controller
 // echo ($foo->$arr)[1]."<br />";
 
 
-
-    class MyClass {
-
-        const CONST_VALUE = 'A constant value';
-		protected function myFunc()
-		{
-        	echo "MyClass::myFunc()\n";
-    	}
-    }
-
-    $classname = 'MyClass';
-    echo $classname::CONST_VALUE.'<br />'; // As of PHP 5.3.0
-    echo MyClass::CONST_VALUE.'<br />';
-
-	class OtherClass extends MyClass
-	{
-	    public static $my_static = 'static var';
-
-	    public static function doubleColon() {
-	        echo parent::CONST_VALUE.'<br />';
-	        echo self::$my_static.'<br />';
-	    }
-
-		public function myFunc()
-	    {
-	        // But still call the parent function
-	        parent::myFunc();
-	        echo "OtherClass::myFunc()\n";
-	    }
-	}
+	//
+    // class MyClass {
+	//
+    //     const CONST_VALUE = 'A constant value';
+	// 	protected function myFunc()
+	// 	{
+    //     	echo "MyClass::myFunc()\n";
+    // 	}
+    // }
+	//
+    // $classname = 'MyClass';
+    // echo $classname::CONST_VALUE.'<br />'; // As of PHP 5.3.0
+    // echo MyClass::CONST_VALUE.'<br />';
+	//
+	// class OtherClass extends MyClass
+	// {
+	//     public static $my_static = 'static var';
+	//
+	//     public static function doubleColon() {
+	//         echo parent::CONST_VALUE.'<br />';
+	//         echo self::$my_static.'<br />';
+	//     }
+	//
+	// 	public function myFunc()
+	//     {
+	//         // But still call the parent function
+	//         parent::myFunc();
+	//         echo "OtherClass::myFunc()\n";
+	//     }
+	// }
 
 	// $classname = 'OtherClass';
 	// echo $classname::doubleColon(); // As of PHP 5.3.0
 	//
 	// OtherClass::doubleColon();
 
-	$class = new OtherClass();
-	$class->myFunc();
+-

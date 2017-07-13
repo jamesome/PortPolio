@@ -15,9 +15,7 @@ class Admin extends MY_Controller
 
     function view()
     {
-        $board_name = $this->uri->segment(3);
-
-        $this->load->view('/admin/'.$board_name);
+        $this->load->view('/admin/'.$this->segment3);
     }
 
 

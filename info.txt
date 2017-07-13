@@ -5,7 +5,7 @@
         2) CodeIgniter(3.1.4) - Framework
 
     2. JavaScript
-        1) Jquery(3.2.1) - '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'
+        1) Jquery(3.2.1).
         2)
 
     3. DB
@@ -31,7 +31,24 @@
 
     4. Core
         - MY_Controller :: 기존 컨트롤러 확장
+        - MY_Model      :: 기존 모델 확장
 
     5. Controller
         - ajax :: ajax만 따로 모아놓음.
             - 형태 :: function ajax_get_user().
+
+    6. DB 함수 추가
+        - mysqli_next_result($this->db->conn_id);
+        => next_result();
+
+    7. TODO ::
+        - 나중에 수정해야 될 부분은 주석에 TODO로 기입.
+        /**
+         * TODO :: 수정필요
+         */
+
+    8. 주석
+        /**
+         *
+         */
+         =>이 형태로 통일.
